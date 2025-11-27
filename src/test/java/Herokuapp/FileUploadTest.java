@@ -26,7 +26,8 @@ public class FileUploadTest extends BaseTestHero{
         assertEquals(driver
                         .findElement(By
                         .xpath(
-                                "//div[@id='uploaded-files' and contains(@class, 'panel')]")),
+                                "//div[@id='uploaded-files' and contains(@class, 'panel')]"))
+                        .getText(),
                                 "photo_5229157309366341620_y.jpg",
                                 "Фото не совпадает");
     }
